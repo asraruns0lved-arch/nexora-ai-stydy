@@ -5,7 +5,5 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
-  vite: {
-    plugins: [netlifyPlugin()],
-  },
+  plugins: [netlifyPlugin()],
 });
