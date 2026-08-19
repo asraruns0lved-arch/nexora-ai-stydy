@@ -1,3 +1,6 @@
-git add netlify.toml
-git commit -m "Configure Netlify deployment"
-git push
+[build]
+  command = "npm run build"
+  publish = ".output/public"
+
+[build.environment]
+  NODE_VERSION = "22"
